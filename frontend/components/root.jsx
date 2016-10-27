@@ -10,11 +10,14 @@ const Root = ({ store }) => {
   };
 
   return (
-    <Provider store={store}>
-      <Router history={hashHistory}>
-        <Route path='/'
-               onEnter={requestOnEnter}
-               component={PokemonIndexContainer} />
+    <Provider
+      store={store}>
+      <Router
+        history={hashHistory}>
+        <Route
+          path='/'
+          onEnter={requestOnEnter}
+          component={PokemonIndexContainer} />
       </Router>
     </Provider>
   );

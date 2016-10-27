@@ -6,5 +6,10 @@ import Root from './components/root';
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
   const rootEl = document.getElementById('root');
-  ReactDOM.render(<Root store={store} />, rootEl);
+
+  ReactDOM.render(
+    <Root
+      store={store} />,
+    rootEl
+  );
 });
