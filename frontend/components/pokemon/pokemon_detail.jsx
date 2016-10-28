@@ -22,7 +22,7 @@ export default ({ pokemon }) => (
         {`Defense: ${pokemon.defense}`}
       </li>
       <li>
-        {`Moves: ${pokemon.moves.join(",")}`}
+        {`Moves: "${pokemon.moves.join(", ")}"`}
       </li>
     </ul>
     <section className="toys">
@@ -34,7 +34,7 @@ export default ({ pokemon }) => (
           <li key={toy.id}>
             <img
               src={toy.image_url}
-              style={{width: 200, height: 300}}
+              style={{width: 100}}
               alt={`Image of ${toy.name}`} />
           </li>
         ))}
